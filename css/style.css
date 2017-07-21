@@ -6,7 +6,7 @@ body {
   min-height: 100vh; }
 
 body {
-  font: calc(10px + .2vw)/1.3 sans-serif;
+  font: calc(10px + .5vw)/1.3 sans-serif;
   color: #4a4a4a;
   margin: 0;
   background-color: #e9eae2; }
@@ -105,12 +105,13 @@ main {
   -webkit-box-direction: normal;
           flex-direction: column;
   color: #fff;
+  -webkit-box-flex: 0;
+          flex: none;
   width: 27%;
   height: 27vw; }
 
 .section__title {
   margin: 1em 0 0;
-  text-align: right;
   font-size: 3vw;
   text-transform: uppercase; }
 
@@ -120,11 +121,49 @@ main {
 .projects .section__header {
   background: linear-gradient(to right bottom, #ecb330 calc(50% - 1px), transparent calc(50% - 1px), #fff 50%, #ecb330 50%); }
 
+.projects .section__footer {
+  background: linear-gradient(-45deg, #ecb330 calc(67% - 1px), transparent calc(67% - 1px), #fff 67%, #ecb330 67%); }
+
 .studio .section__header {
   background: linear-gradient(to right bottom, #ff9b69 calc(50% - 1px), transparent calc(50% - 1px), #fff 50%, #ff9b69 50%); }
 
 .news .section__header {
   background: linear-gradient(to right bottom, #d3edbd calc(50% - 1px), transparent calc(50% - 1px), #fff 50%, #d3edbd 50%); }
+
+.section__footer {
+  padding: 2em;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column;
+  color: #fff;
+  width: 27%; }
+
+.studio {
+  display: -webkit-box;
+  display: flex; }
+
+.studio__about {
+  display: -webkit-box;
+  display: flex;
+  padding: 2vw; }
+
+.studio__article {
+  -webkit-box-flex: 1;
+          flex: 1;
+  padding: 2vw; }
+
+.studio__people {
+  flex-basis: 100%; }
+
+.studio__img {
+  margin-bottom: 1em; }
+
+.awards__title {
+  text-transform: uppercase;
+  border-bottom: 2px solid #666;
+  margin: 0 0 2em; }
 
 .card {
   padding: 10px;
@@ -219,14 +258,24 @@ main {
 .copyright {
   flex-basis: 100%; }
 
-.list_column a {
-  text-transform: uppercase;
-  position: relative; }
-  .list_column a.active, .list_column a:hover {
-    color: #4a4a4a; }
-    .list_column a.active:before, .list_column a:hover:before {
-      content: "//";
-      position: absolute;
-      right: 100%; }
+.list_column {
+  font-size: .75em; }
+  .list_column a {
+    text-transform: uppercase;
+    position: relative; }
+    .list_column a.active, .list_column a:hover {
+      color: #4a4a4a; }
+      .list_column a.active:before, .list_column a:hover:before {
+        content: "//";
+        position: absolute;
+        right: 100%; }
+
+.list_column_2 {
+  -webkit-column-count: 2;
+          column-count: 2; }
+
+.subtitle {
+  margin: 0;
+  text-transform: uppercase; }
 
 /*# sourceMappingURL=style.css.map */
