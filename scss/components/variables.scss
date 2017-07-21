@@ -1,0 +1,19 @@
+//COLORS
+
+$bgColor: #e9eae2;
+$fontColor: #4a4a4a;
+$fontColor_inverse: #fff;
+
+//section colors
+$brandColor:     #77cfc3;
+$projectsColor:  #ecb330;
+$studioColor:    #ff9b69;
+$newsColor:      #d3edbd;
+
+//grid item sizes
+$a: 27;
+$gridItem_height: $a * 1vw;
+$gridItem_sm: $a * 1%;
+$gridItem_md: 100% - $gridItem_sm * 2;
+$gridItem_xs: (100% - $gridItem_sm) / 4;
+$gridItem_lg: $gridItem_xs * 3;

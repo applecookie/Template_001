@@ -1,0 +1,68 @@
+.card {
+  padding: 10px;
+  background-position: center;
+  background-size: cover;
+  text-transform: uppercase;
+}
+
+.card__title {
+  font-weight: 500;
+  font-size: 1.6em;
+  margin: 0;
+}
+
+.card__description {
+  font-size: .85em;
+  dt {
+    font-weight: 700;
+    display: inline;
+    &:before {
+      content: "";
+      display: block;
+    }
+    &:after {
+      content: ":";
+    }
+  }
+  dd {
+    display: inline;
+    &:after {
+      content: "";
+      display: block;
+    }
+  }
+}
+
+.card__show-more {
+  display: inline-flex;
+  align-items: center;
+  .material-icons {
+    color: $projectsColor;
+  }
+  &:hover {
+    text-decoration: none;
+    transform: scale(.9);
+  }
+  //&:before {
+  //  content: "-->";
+  //  color: $projectsColor;
+  //}
+}
+
+.card__favorite {
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: center;
+  .material-icons {
+    line-height: 1;
+  }
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+.card__likes {
+  color: #f77775;
+  font-size: .75em;
+  font-weight: 600;
+}

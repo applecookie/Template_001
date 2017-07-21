@@ -1,0 +1,65 @@
+main {
+  flex: 1;
+}
+
+.grid {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.grid__row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.grid__item {
+  flex: 1;
+}
+
+.grid__item_lg {
+  flex: 2;
+}
+
+.masonry {
+  //background-image: url("https://www.jab.de/medias/sys_master/images/images/ha0/h03/8803730161694/img-bw-collections.jpg");
+  &:after, &:before {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+.masonry__item {
+  float: left;
+  height: $gridItem_height;
+  border: 1px solid #fff;
+}
+
+.masonry__item_vertxs {
+  height: $gridItem_height / 2;
+}
+
+.masonry__item_right {
+  float: right;
+}
+
+.masonry__item_lg {
+  width: $gridItem_lg;
+  background-color: purple;
+}
+
+.masonry__item_md {
+  width: $gridItem_md;
+  background-color: #2b669a;
+}
+
+.masonry__item_sm {
+  width: $gridItem_sm;
+  background-color: #67b168;
+}
+
+.masonry__item_xs {
+  width: $gridItem_xs;
+  background-color: #ff2f54;
+}
