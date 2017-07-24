@@ -17,12 +17,7 @@ main {
   flex: 1;
 }
 
-.grid__item_lg {
-  flex: 2;
-}
-
 .masonry {
-  //background-image: url("https://www.jab.de/medias/sys_master/images/images/ha0/h03/8803730161694/img-bw-collections.jpg");
   &:after, &:before {
     content: "";
     display: table;
@@ -33,7 +28,6 @@ main {
 .masonry__item {
   float: left;
   height: $gridItem_height;
-  border: 1px solid #fff;
 }
 
 .masonry__item_vertxs {
@@ -46,20 +40,20 @@ main {
 
 .masonry__item_lg {
   width: $gridItem_lg;
-  background-color: purple;
+  background-color: lighten($projectsColor, 15%);
 }
 
 .masonry__item_md {
   width: $gridItem_md;
-  background-color: #2b669a;
+  background-color: lighten($projectsColor, 17%);
 }
 
 .masonry__item_sm {
   width: $gridItem_sm;
-  background-color: #67b168;
+  background-color: lighten($projectsColor, 19%);
 }
 
 .masonry__item_xs {
   width: $gridItem_xs;
-  background-color: #ff2f54;
+  background-color: lighten($projectsColor, 21%);
 }

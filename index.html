@@ -21,34 +21,43 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="/css/font-awesome.min.css">
     <link rel="stylesheet" href="/css/style.css">
 </head>
 <body class="grid">
 <header class="header grid__row">
-    <div class="grid__item grid__item_lg"
-    style="background: url(https://www.designconnected.com/img/dcnew/home/1_fullHD.jpg) center/cover">
+    <div class="grid__item" style="background: url(https://www.designconnected.com/img/dcnew/home/1_fullHD.jpg) center/cover">
         <div class="logo">
             <h1 class="logo__brand">DSGN - company name</h1>
             <img class="logo__img" src="http://www.mrandmrsleads.com/uploads/1/0/0/4/100418346/logo-design-1_orig.png" alt="DSGN">
         </div>
-        <ul class="social social_lg">
-            <li><a href="">facebook</a></li>
-            <li><a href="">twitter</a></li>
-            <li><a href="">instagram</a></li>
-            <li><a href="">google+</a></li>
+        <ul class="social">
+            <li>
+                <a href="javascript:void(0);"><i class="fa fa-facebook"></i></a>
+            </li>
+            <li>
+                <a href="javascript:void(0);"><i class="fa fa-twitter"></i></a>
+            </li>
+            <li>
+                <a href="javascript:void(0);"><i class="fa fa-instagram"></i></a>
+            </li>
+            <li>
+                <a href="javascript:void(0);"><i class="fa fa-google-plus"></i></a>
+            </li>
         </ul>
     </div>
-    <div class="section__header">
-        <nav class="dropdown">
-            <button type="button" class="dropdown__toggle">
-                <i class="material-icons">menu</i>
+    <div class="grid__header">
+        <div class="nav">
+            <button type="button" class="nav__toggle">
+                <i class="fa fa-bars"></i>
             </button>
-            <ul class="dropdown__menu">
-                <li><a href="">menu 1</a></li>
-                <li><a href="">menu 2</a></li>
-                <li><a href="">menu 3</a></li>
-            </ul>
-        </nav>
+            <nav class="nav__menu">
+                <a class="nav__item" href="javascript:void(0);">menu 1</a>
+                <a class="nav__item" href="javascript:void(0);">menu 2</a>
+                <a class="nav__item" href="javascript:void(0);">menu 3</a>
+                <a class="nav__item" href="javascript:void(0);">menu 4</a>
+            </nav>
+        </div>
         <address>
             <ul class="list_column">
                 <li>90802 california long beach</li>
@@ -63,7 +72,7 @@
     </div>
 </header>
 <main>
-    <section class="masonry projects">
+    <section class="projects masonry">
     <div class="masonry__item section__header">
         <ul class="list_column list_marked">
             <li><a class="active" href="">all</a></li>
@@ -74,7 +83,8 @@
         </ul>
         <h2 class="section__title">projects</h2>
     </div>
-    <div class="masonry__item masonry__item_md card" style="background-image:url(http://builtwithmammoth.com/sites/yabupushelberg/content/img/h_1A-20150328-ft54142.jpg);">
+    <!--<div class="masonry__item masonry__item_md card" style="background-image:url(http://builtwithmammoth.com/sites/yabupushelberg/content/img/h_1A-20150328-ft54142.jpg);">-->
+    <div class="masonry__item masonry__item_md card">
         <h3 class="card__title">fondue</h3>
         <dl class="card__description">
             <dt>project assistant</dt>  <dd>chak norris</dd>
@@ -84,11 +94,11 @@
             <dt>year</dt>               <dd>2014</dd>
         </dl>
         <a href="" class="card__show-more">
-            <i class="material-icons">arrow_forward</i>
+            <i class="fa fa-arrow-right"></i>
             view project
         </a>
         <a href="" class="card__favorite">
-            <i class="material-icons">favorite_border</i>
+            <i class="fa fa-heart-o"></i>
             <span class="card__likes">+ 200</span>
         </a>
     </div>
@@ -110,7 +120,7 @@
         </ul>
     </div>
 </section>
-    <section class="studio">
+    <section class="studio grid__row">
     <div class="section__header">
         <h2 class="section__title">studio</h2>
     </div>
@@ -130,18 +140,134 @@
                     <li>1333</li>
                     <li>1333</li>
                 </ul>
-
             </div>
         </article>
     </div>
-    <div class="studio__people">
-        people
-    </div>
 </section>
-    <section class="section">news</section>
+<div class="studio__people">
+    <article class="studio__article">
+        <h5 class="awards__title">Awards</h5>
+        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis</p>
+    </article>
+    <article class="people__card">
+        <figure>
+            <img src="https://i.ytimg.com/vi/iCkylFeDFUI/maxresdefault.jpg" alt="">
+            <figcaption class="card__title">
+                John Wick
+                <span class="card__subtitle">chosen one</span>
+            </figcaption>
+        </figure>
+        <footer class="card__footer">
+            <a href="" class="cat">
+                cv
+                <i class="fa fa-arrow-left"></i>
+            </a>
+            <ul class="social card__social">
+                <li>
+                    <a href="javascript:void(0);"><i class="fa fa-facebook"></i></a>
+                </li>
+                <li>
+                    <a href="javascript:void(0);"><i class="fa fa-twitter"></i></a>
+                </li>
+                <li>
+                    <a href="javascript:void(0);"><i class="fa fa-instagram"></i></a>
+                </li>
+                <li>
+                    <a href="javascript:void(0);"><i class="fa fa-google-plus"></i></a>
+                </li>
+            </ul>
+        </footer>
+    </article>
+    <article class="people__card">
+        <figure>
+            <img src="https://i.ytimg.com/vi/iCkylFeDFUI/maxresdefault.jpg" alt="">
+            <figcaption class="card__title">
+                John Wick
+                <span class="card__subtitle">chosen one</span>
+            </figcaption>
+        </figure>
+        <footer class="card__footer">
+            <a href="" class="cat">
+                cv
+                <i class="fa fa-arrow-left"></i>
+            </a>
+            <ul class="social card__social">
+                <li>
+                    <a href="javascript:void(0);"><i class="fa fa-facebook"></i></a>
+                </li>
+                <li>
+                    <a href="javascript:void(0);"><i class="fa fa-twitter"></i></a>
+                </li>
+                <li>
+                    <a href="javascript:void(0);"><i class="fa fa-instagram"></i></a>
+                </li>
+                <li>
+                    <a href="javascript:void(0);"><i class="fa fa-google-plus"></i></a>
+                </li>
+            </ul>
+        </footer>
+    </article>
+    <article class="people__card">
+        <figure>
+            <img src="https://i.ytimg.com/vi/iCkylFeDFUI/maxresdefault.jpg" alt="">
+            <figcaption class="card__title">
+                John Wick
+                <span class="card__subtitle">chosen one</span>
+            </figcaption>
+        </figure>
+        <footer class="card__footer">
+            <a href="" class="cat">
+                cv
+                <i class="fa fa-arrow-left"></i>
+            </a>
+            <ul class="social card__social">
+                <li>
+                    <a href="javascript:void(0);"><i class="fa fa-facebook"></i></a>
+                </li>
+                <li>
+                    <a href="javascript:void(0);"><i class="fa fa-twitter"></i></a>
+                </li>
+                <li>
+                    <a href="javascript:void(0);"><i class="fa fa-instagram"></i></a>
+                </li>
+                <li>
+                    <a href="javascript:void(0);"><i class="fa fa-google-plus"></i></a>
+                </li>
+            </ul>
+        </footer>
+    </article>
+</div>
+
+    <section class="news">
+    <div class="section__header">
+        <h2 class="section__title">news</h2>
+    </div>
+    <article class="news__article">
+        <hgroup>
+            <h4 class="article__title">Article title</h4>
+            <h6 class="article__date">11.11.2011</h6>
+        </hgroup>
+        <img class="article__img" src="http://intdez.ru/wp-content/uploads/2015/07/photo2.jpg" alt="">
+        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus
+            mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate</p>
+        <a href="javascript:void(0);" class="article__show-more">read more</a>
+    </article>
+    <article class="news__article">
+        <hgroup>
+            <h4 class="article__title">Article title</h4>
+            <h6 class="article__date">11.11.2011</h6>
+        </hgroup>
+        <img class="article__img" src="http://intdez.ru/wp-content/uploads/2015/07/photo2.jpg" alt="">
+        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus
+            mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate</p>
+        <a href="javascript:void(0);" class="article__show-more">read more</a>
+    </article>
+</section>
 </main>
 <footer class="grid__row">
-    <div class="grid__item map">map</div>
+    <div class="grid__item map">
+        <img src="https://www.justring.com/img/cms/map.jpg" alt="">
+    </div>
     <div class="grid__item">
         <div class="grid__row">
             <div class="grid__item">
@@ -162,11 +288,19 @@
                     <h1 class="logo__brand">DSGN - company name</h1>
                     <img class="logo__img" src="http://www.mrandmrsleads.com/uploads/1/0/0/4/100418346/logo-design-1_orig.png" alt="DSGN">
                 </div>
-                <ul class="social social_lg">
-                    <li><a href="">facebook</a></li>
-                    <li><a href="">twitter</a></li>
-                    <li><a href="">instagram</a></li>
-                    <li><a href="">google+</a></li>
+                <ul class="social">
+                    <li>
+                        <a href="javascript:void(0);"><i class="fa fa-facebook"></i></a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0);"><i class="fa fa-twitter"></i></a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0);"><i class="fa fa-instagram"></i></a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0);"><i class="fa fa-google-plus"></i></a>
+                    </li>
                 </ul>
             </div>
             <p class="copyright">2014 dsgn All rights reserved - Designed by me</p>

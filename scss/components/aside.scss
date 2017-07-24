@@ -1,0 +1,44 @@
+.nav {
+  text-align: center;
+}
+
+.nav__toggle {
+  border: 1px solid $fontColor_inverse;
+  padding: 2.7vw;
+  color: $fontColor_inverse;
+  border-radius: 2px;
+  @include actionsTransition(border-radius);
+  &:hover {
+    border-radius: 100%;
+  }
+  .fa {
+    font-size: 3vw;
+  }
+}
+
+.nav__menu {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background: $asideBgColor;
+  width: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.nav__item {
+  padding: 2em;
+  &:hover {
+    background-color: lighten($asideBgColor, 20%);
+  }
+}
+
+.nav_opened {
+  .nav__menu {
+    width: $asideWidth;
+  }
+  .grid {
+    width: 100% - $asideWidth;
+  }
+}

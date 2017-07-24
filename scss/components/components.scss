@@ -1,0 +1,66 @@
+.social {
+  display: flex;
+  color: $brandColor;
+  a {
+    padding: .5em;
+    display: inline-block;
+    border-radius: 100%;
+    text-align: center;
+    &:hover {
+      background-color: rgba(#000, .05);
+    }
+  }
+  .fa {
+    font-size: 2em;
+  }
+}
+
+.card__social {
+  color: $studioColor;
+  .fa {
+    font-size: 1em;
+  }
+}
+
+.logo {
+  display: inline-block;
+}
+
+.logo__brand {
+  margin: 0;
+  display: none;
+}
+
+.logo__img {
+  max-width: 15vw;
+}
+
+.copyright {
+  flex-basis: 100%;
+}
+
+.list_column {
+  font-size: .75em;
+  a {
+    text-transform: uppercase;
+    position: relative;
+    &.active, &:hover {
+      color: $fontColor;
+      &:before {
+        content: "\f061";
+        @include Icon;
+        position: absolute;
+        right: 100%;
+      }
+    }
+  }
+}
+
+.list_column_2 {
+  column-count: 2;
+}
+
+.subtitle {
+  margin: 0;
+  text-transform: uppercase;
+}

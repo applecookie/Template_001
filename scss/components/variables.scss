@@ -1,8 +1,7 @@
 //COLORS
-
-$bgColor: #e9eae2;
-$fontColor: #4a4a4a;
-$fontColor_inverse: #fff;
+$bgColor:             #e9eae2;
+$fontColor:           #4a4a4a;
+$fontColor_inverse:   #fff;
 
 //section colors
 $brandColor:     #77cfc3;
@@ -11,9 +10,27 @@ $studioColor:    #ff9b69;
 $newsColor:      #d3edbd;
 
 //grid item sizes
-$a: 27;
-$gridItem_height: $a * 1vw;
-$gridItem_sm: $a * 1%;
-$gridItem_md: 100% - $gridItem_sm * 2;
-$gridItem_xs: (100% - $gridItem_sm) / 4;
-$gridItem_lg: $gridItem_xs * 3;
+$a: 31;
+$gridItem_height:   ($a + 3) * 1vw;
+$gridItem_sm:       $a * 1%;
+$gridItem_md:       100% - $gridItem_sm * 2;
+$gridItem_xs:       (100% - $gridItem_sm) / 4;
+$gridItem_lg:       $gridItem_xs * 3;
+
+@mixin Icon {
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  width: 1em;
+  height: 1em;
+}
+
+$asideWidth: 25%;
+$asideBgColor: #000;
+
+@mixin actionsTransition ($prop) {
+  transition: .3s $prop ease-in;
+}

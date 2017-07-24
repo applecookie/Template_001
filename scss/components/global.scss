@@ -7,13 +7,13 @@ body {
   min-height: 100vh;
 }
 body {
-  font: calc(10px + .5vw)/1.3 sans-serif;
+  font: calc(10px + .5vw)/1.3 "Roboto", sans-serif;
   color: $fontColor;
-  margin: 0;
   background-color: $bgColor;
 }
 
 //RESET
+
 img {
   width: 100%;
   height: auto;
@@ -30,19 +30,25 @@ a {
 button {
   background-color: transparent;
   border: none;
+  cursor: pointer;
 }
 
 ul {
   list-style: none;
   padding: 0;
-  margin: 0;
 }
 
-dl, dd {
+body, dl, dd, p, ul,
+h1, h2, h3, h4, h5, h6{
   margin: 0;
 }
 
 address {
   font-style: normal;
   text-transform: uppercase;
+}
+
+.fa {
+  width: 1em;
+  height: 1em;
 }
