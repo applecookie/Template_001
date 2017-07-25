@@ -17,6 +17,9 @@ $gridItem_md:       100% - $gridItem_sm * 2;
 $gridItem_xs:       (100% - $gridItem_sm) / 4;
 $gridItem_lg:       $gridItem_xs * 3;
 
+$outerSpace: 8vw;
+$innerSpace: 3vw;
+
 @mixin Icon {
   display: inline-block;
   font: normal normal normal 14px/1 FontAwesome;

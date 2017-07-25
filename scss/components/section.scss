@@ -98,11 +98,13 @@
 }
 
 .studio {
-  display: flex;
+  //display: flex;
 }
 
 .studio__about {
   display: flex;
+  padding: $outerSpace + $innerSpace;
+  padding-left: $outerSpace;
 }
 
 .studio__article {
@@ -116,6 +118,7 @@
 
 .studio__img {
   margin-bottom: 1em;
+  max-height: 10vw;
 }
 
 .awards__title {
@@ -131,6 +134,7 @@
 .card__footer {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .news {

@@ -7,7 +7,7 @@ body {
   min-height: 100vh; }
 
 body {
-  font: calc(10px + .5vw)/1.3 "Roboto", sans-serif;
+  font: 1vw/1.3 "Roboto", sans-serif;
   color: #4a4a4a;
   background-color: #e9eae2; }
 
@@ -166,13 +166,11 @@ main {
   color: #fff;
   width: 31%; }
 
-.studio {
-  display: -webkit-box;
-  display: flex; }
-
 .studio__about {
   display: -webkit-box;
-  display: flex; }
+  display: flex;
+  padding: 11vw;
+  padding-left: 8vw; }
 
 .studio__article {
   -webkit-box-flex: 1;
@@ -184,7 +182,8 @@ main {
   display: flex; }
 
 .studio__img {
-  margin-bottom: 1em; }
+  margin-bottom: 1em;
+  max-height: 10vw; }
 
 .awards__title {
   text-transform: uppercase;
@@ -199,7 +198,9 @@ main {
   display: -webkit-box;
   display: flex;
   -webkit-box-pack: justify;
-          justify-content: space-between; }
+          justify-content: space-between;
+  -webkit-box-align: center;
+          align-items: center; }
 
 .news {
   display: -webkit-box;
